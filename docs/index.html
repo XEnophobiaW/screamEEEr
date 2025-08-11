@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ViklaVideo</title>
+    <title>NotVideo</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -39,9 +39,9 @@
 </head>
 <body>
     <div id="content">
-        <p>Добро пожаловать на сайт!</p>
-        <p>Пожалуйста, нажмите на кнопку ниже.</p>
-        <button onclick="showScrimer()">Нажми меня</button>
+        <p>Welcome!</p>
+        <p>Please, click on the button</p>
+        <button onclick="showScrimer()">Click</button>
     </div>
 
     <div id="scrimer">
@@ -59,7 +59,7 @@
 
             scrimer.style.display = 'block';
             scarySound.play().catch(error => {
-                console.error("Ошибка воспроизведения звука:", error);
+                console.error("Error sound", error);
             });
 
             setTimeout(() => {
